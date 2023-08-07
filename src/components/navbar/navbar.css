@@ -19,8 +19,6 @@
 
 .gpt3__navbar-links_logo img {
   width: 100px;
-  /* height: ; */
-
 }
 
 .gpt3__navbar-links_container {
@@ -52,7 +50,12 @@
 .gpt3__navbar-menu_container button {
   padding: 0.5rem 1rem;
   color: #fff;
-  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
   transition: 0.5s;
   background-size: 200% auto;
   font-family: var(--font-family);
