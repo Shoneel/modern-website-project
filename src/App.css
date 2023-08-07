@@ -1,0 +1,169 @@
+/* Global CSS rules */
+* {
+  box-sizing: border-box; /* All elements will have a border-box box model */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+/* Body styles */
+body {
+  background: var(
+    --color-bg
+  ); /* Set the background color using a custom variable --color-bg */
+}
+
+/* Link styles */
+a {
+  color: unset; /* Unset the default link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Background gradient styles */
+/* .gradient__bg {
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+} */
+
+.gradient__bg {
+  /* Background gradient for different browser engines */
+  background: -moz-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 0%,
+    /* Dark blue color with alpha 1 (fully opaque) */ rgba(25, 25, 112, 1) 40%,
+    /* Premium blue color with alpha 1 (fully opaque) */ rgba(0, 212, 255, 1)
+      100% /* Light blue color with alpha 1 (fully opaque) */
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 0%,
+    /* Dark blue color with alpha 1 (fully opaque) */ rgba(25, 25, 112, 1) 40%,
+    /* Premium blue color with alpha 1 (fully opaque) */ rgba(0, 212, 255, 1)
+      100% /* Light blue color with alpha 1 (fully opaque) */
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 0%,
+    /* Dark blue color with alpha 1 (fully opaque) */ rgba(25, 25, 112, 1) 40%,
+    /* Premium blue color with alpha 1 (fully opaque) */ rgba(0, 212, 255, 1)
+      100% /* Light blue color with alpha 1 (fully opaque) */
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 0%,
+    /* Dark blue color with alpha 1 (fully opaque) */ rgba(25, 25, 112, 1) 40%,
+    /* Premium blue color with alpha 1 (fully opaque) */ rgba(0, 212, 255, 1)
+      100% /* Light blue color with alpha 1 (fully opaque) */
+  );
+  background: linear-gradient(
+    to right,
+    rgba(2, 0, 36, 1) 0%,
+    /* Dark blue color with alpha 1 (fully opaque) */ rgba(25, 25, 112, 1) 40%,
+    /* Premium blue color with alpha 1 (fully opaque) */ rgb(0, 146, 195) 100%
+      /* Light blue color with alpha 1 (fully opaque) */
+  );
+}
+
+/* Text gradient styles */
+.gradient__text {
+  background: var(
+    --gradient-text
+  ); /* Set background using a custom variable --gradient-text */
+  background-clip: text; /* Apply the background only to the text itself */
+  -webkit-background-clop: text; /* Safari specific property for background clipping */
+  -webkit-text-fill-color: transparent; /* Make the text transparent, so the background gradient shows through */
+}
+
+/* Apply the same radial gradient for button background */
+.gradient__button {
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+}
+
+/* Padding utility class */
+.section__padding {
+  padding: 4rem 6rem; /* Set padding for elements with the class .section__padding */
+}
+
+/* Margin utility class */
+.section__margin {
+  margin: 4rem 6rem; /* Set margin for elements with the class .section__margin */
+}
+
+/* Animation for scaling up centered elements */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* Keyframes for scaling up centered elements */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5); /* Start the animation at 50% scale */
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1); /* End the animation at 100% scale */
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5); /* Start the animation at 50% scale */
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1); /* End the animation at 100% scale */
+    transform: scale(1);
+  }
+}
+
+/* Media query for screen width up to 768px */
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 4rem; /* Change the padding for smaller screens */
+  }
+
+  .section__margin {
+    margin: 4rem; /* Change the margin for smaller screens */
+  }
+}
+
+/* Media query for screen width up to 550px */
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem; /* Further adjust padding for even smaller screens */
+  }
+
+  .section__margin {
+    margin: 4rem 2rem; /* Further adjust margin for even smaller screens */
+  }
+}
