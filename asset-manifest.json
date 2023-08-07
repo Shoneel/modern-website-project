@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/modern-website-project/static/css/main.dcb88bb4.css",
+    "main.js": "/modern-website-project/static/js/main.8afa1d4f.js",
+    "static/media/ai.png": "/modern-website-project/static/media/ai.aa60586ba1ba53762d94.png",
+    "static/media/possibility.png": "/modern-website-project/static/media/possibility.525f13b61a2157d44de0.png",
+    "static/media/blog01.png": "/modern-website-project/static/media/blog01.cefc0932eae0d33a0342.png",
+    "static/media/blog03.png": "/modern-website-project/static/media/blog03.d922323861096f25274f.png",
+    "static/media/blog04.png": "/modern-website-project/static/media/blog04.742c1357e7b6c11078e6.png",
+    "static/media/blog05.png": "/modern-website-project/static/media/blog05.bfaa1c1e3851158e0e1f.png",
+    "static/media/blog02.png": "/modern-website-project/static/media/blog02.ab0eb367561796e91532.png",
+    "static/media/shonzi.png": "/modern-website-project/static/media/shonzi.3a3c0b3ce1ab16c75657.png",
+    "static/media/people.png": "/modern-website-project/static/media/people.5cd2d6fbcd48bd63f106.png",
+    "index.html": "/modern-website-project/index.html",
+    "main.dcb88bb4.css.map": "/modern-website-project/static/css/main.dcb88bb4.css.map",
+    "main.8afa1d4f.js.map": "/modern-website-project/static/js/main.8afa1d4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcb88bb4.css",
+    "static/js/main.8afa1d4f.js"
+  ]
+}
